@@ -246,7 +246,9 @@ def cache_from_uri(
             )
         os.makedirs(XINFERENCE_CACHE_DIR, exist_ok=True)
         os.symlink(src_root, cache_dir, target_is_directory=True)
-        return cache_dir
+        # return cache_dir
+        # for windows
+        return "D:\Lucky\Code\Python\lucky-ai\.cache"
     elif src_scheme in ["s3"]:
         # use anonymous connection for self-hosted storage.
         src_fs: AbstractFileSystem = filesystem(src_scheme, anon=self_hosted_storage)

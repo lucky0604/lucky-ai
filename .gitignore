@@ -145,3 +145,4 @@ doc/source/savefig/
 asv/results
 
 .DS_Store
+xinference/web/ui/packge-lock.json
